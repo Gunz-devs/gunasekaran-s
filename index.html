@@ -1,6 +1,359 @@
-:root{
-  --sky0:#1a1a2e;--sky1:#16213e;--sky2:#0f3460;--sky3:#e94560;--sky4:#e94560;--sky5:#c73649;--sky6:#8b0000;
-  --ink:#ffffff;--ink2:#e0e0e0;--ink3:#a0a0a0;
-  --bg:#0f0f0f;--bg2:#1a1a1a;--white:#ffffff;
-  --line:rgba(233,69,96,0.18);
-}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gunasekaran S — Lead Robotics Engineer</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav>
+      <span class="nav-logo">GUNASEKARAN.S</span>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section id="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-grid"></div>
+      <div class="hero-content">
+        <h1 class="hero-name">
+          Guna<span class="outline">sekaran</span><br />
+          <span class="blue">Robotics</span> Engineer
+        </h1>
+        <p class="hero-tagline">
+          Building intelligent autonomous robots — from SLAM and navigation to full
+          software architecture — with 7+ years delivering real-world robotic systems.
+        </p>
+        <div class="hero-actions">
+          <a class="btn-primary" href="#projects">View Projects →</a>
+          <button
+            class="btn-ghost"
+            onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})"
+          >
+            Let's Talk
+          </button>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <div class="stat-num">7+</div>
+            <div class="stat-label">Years of experience</div>
+          </div>
+          <div class="stat stat--offset">
+            <div class="stat-num">8+</div>
+            <div class="stat-label">Robots built & deployed</div>
+          </div>
+          <div class="stat stat--offset">
+            <div class="stat-num">9.04</div>
+            <div class="stat-label">B.E CGPA</div>
+          </div>
+        </div>
+      </div>
+      <div class="tech-orbit">
+        <div class="orbit-ring"></div>
+        <div class="orbit-ring-2"></div>
+        <div class="orbit-center">🤖</div>
+        <div class="orbit-dot" style="top:-23px;left:50%;transform:translateX(-50%)">ROS2</div>
+        <div class="orbit-dot" style="top:50%;right:-23px;transform:translateY(-50%)">SLAM</div>
+        <div class="orbit-dot" style="bottom:-23px;left:50%;transform:translateX(-50%)">Nav2</div>
+        <div class="orbit-dot" style="top:50%;left:-23px;transform:translateY(-50%)">C++</div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="about-layout">
+          <div>
+            <p class="section-eyebrow">About Me</p>
+            <h2 class="section-title">
+              Building machines that <em class="section-title__em">think and move</em>
+            </h2>
+            <div class="about-card">
+              <div class="about-row">
+                <div class="avatar">GS</div>
+                <div>
+                  <div class="about-name">Gunasekaran S</div>
+                  <div class="about-role">Lead Robotics Engineer</div>
+                </div>
+              </div>
+              <div>
+                <div class="meta-item">
+                  <span class="meta-dot"></span>
+                  Nagapattinam, Tamil Nadu, India
+                </div>
+                <div class="meta-item">
+                  <span class="meta-dot"></span>
+                  gunakresh@gmail.com
+                </div>
+                <div class="meta-item">
+                  <span class="meta-dot"></span>
+                  (+91) 7200570750
+                </div>
+                <div class="meta-item">
+                  <span class="meta-dot"></span>
+                  Tamil & English
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <p class="about-text">
+              I'm a Lead Robotics Engineer with 7+ years of experience designing and deploying
+              autonomous robotic systems. My expertise spans ROS/ROS2, SLAM, autonomous navigation,
+              and full software stack development across diverse robot platforms.
+            </p>
+            <p class="about-text">
+              I'm driven by the mission to make every human life better, productive, and protective
+              through intelligent robotics — from autonomous wheelchairs and patrol robots to industrial
+              transport and cleaning systems.
+            </p>
+            <div class="skills-grid">
+              <span class="skill-chip">Python</span>
+              <span class="skill-chip">C++</span>
+              <span class="skill-chip">ROS1 Noetic</span>
+              <span class="skill-chip">ROS2 Humble</span>
+              <span class="skill-chip">SLAM</span>
+              <span class="skill-chip">Nav2</span>
+              <span class="skill-chip">Gmapping</span>
+              <span class="skill-chip">Cartographer</span>
+              <span class="skill-chip">RTAB-Map</span>
+              <span class="skill-chip">AMCL</span>
+              <span class="skill-chip">Jetson TX2/Nano</span>
+              <span class="skill-chip">Raspberry Pi</span>
+              <span class="skill-chip">Intel NUC</span>
+              <span class="skill-chip">GitHub / GitLab</span>
+              <span class="skill-chip">PostgreSQL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <p class="section-eyebrow">Professional Projects</p>
+        <h2 class="section-title">Systems I've built</h2>
+        <div class="projects-grid">
+          <div class="project-card featured">
+            <div class="feat-inner">
+              <div>
+                <div class="project-num">
+                  <span>01 — Featured</span>
+                  <div class="arrow-icon">↗</div>
+                </div>
+                <div class="role-badge">Software Lead — Full Architect</div>
+                <h3 class="project-title">Autonomous Wheelchair — US</h3>
+                <p class="project-desc">
+                  Robots designed to carry people around airports and guide them to their destination
+                  autonomously. Led full software architecture and development from the ground up.
+                </p>
+                <div class="project-tags">
+                  <span class="project-tag">ROS2</span>
+                  <span class="project-tag">SLAM</span>
+                  <span class="project-tag">Nav2</span>
+                  <span class="project-tag">C++</span>
+                  <span class="project-tag">Jetson</span>
+                </div>
+              </div>
+              <div class="feat-visual">♿🛫</div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-num">
+              <span>02</span>
+              <div class="arrow-icon">↗</div>
+            </div>
+            <div class="role-badge">Team Lead — Full Architect</div>
+            <h3 class="project-title">Rut Management System — DRDO</h3>
+            <p class="project-desc">
+              Built a system to measure the RUT profile of the field on the MBT vehicle for India's
+              Defence Research and Development Organisation.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">DRDO</span>
+              <span class="project-tag">Embedded</span>
+              <span class="project-tag">C++</span>
+              <span class="project-tag">Sensors</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-num">
+              <span>03</span>
+              <div class="arrow-icon">↗</div>
+            </div>
+            <div class="role-badge">Team Lead — Application Dev</div>
+            <h3 class="project-title">Indoor / Outdoor Patrolling Robot</h3>
+            <p class="project-desc">
+              Robots deployed in condos, shopping complexes, and public places to patrol and ensure
+              safety. Developed navigation and auto-docking features.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">ROS</span>
+              <span class="project-tag">Navigation</span>
+              <span class="project-tag">Auto-dock</span>
+              <span class="project-tag">Python</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-num">
+              <span>04</span>
+              <div class="arrow-icon">↗</div>
+            </div>
+            <div class="role-badge">Software Lead — Full Stack</div>
+            <h3 class="project-title">Autonomous Cleaning Robot</h3>
+            <p class="project-desc">
+              Robots that autonomously clean floors in large-scale environments like shopping malls
+              and warehouses. Developed the complete software stack.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">ROS2</span>
+              <span class="project-tag">Coverage Planning</span>
+              <span class="project-tag">SLAM</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-num">
+              <span>05</span>
+              <div class="arrow-icon">↗</div>
+            </div>
+            <div class="role-badge">Software Lead — Full Stack</div>
+            <h3 class="project-title">Reception Robot</h3>
+            <p class="project-desc">
+              Interactive robots that guide visitors through schools and offices. Also developed a UV-C
+              disinfection variant to eliminate viruses and bacteria from surroundings.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">HRI</span>
+              <span class="project-tag">UV-C</span>
+              <span class="project-tag">ROS</span>
+              <span class="project-tag">Python</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-num">
+              <span>06</span>
+              <div class="arrow-icon">↗</div>
+            </div>
+            <div class="role-badge">Software Developer</div>
+            <h3 class="project-title">Transport Robot</h3>
+            <p class="project-desc">
+              Robots designed to carry stock between machines in production plants. Contributed application
+              features for industrial logistics automation.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">AMR</span>
+              <span class="project-tag">Industrial</span>
+              <span class="project-tag">ROS</span>
+              <span class="project-tag">Navigation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="container">
+        <p class="section-eyebrow">Career</p>
+        <h2 class="section-title">Work experience</h2>
+        <div class="exp-timeline">
+          <div class="exp-item">
+            <div class="exp-period">Sep 2019 — Present · 7+ years</div>
+            <div class="exp-role">Lead Robotics Engineer</div>
+            <div class="exp-company">GOAT Robotics PVT. LTD.</div>
+            <p class="exp-desc">
+              Leading software architecture and development of diverse autonomous robot platforms — from
+              airport wheelchairs to patrolling and cleaning robots. Responsible for full-stack ROS2
+              development, SLAM integration, navigation tuning, and team leadership.
+            </p>
+            <div class="exp-chips">
+              <span class="exp-chip">Software Lead</span>
+              <span class="exp-chip">ROS2</span>
+              <span class="exp-chip">SLAM</span>
+              <span class="exp-chip">Nav2</span>
+              <span class="exp-chip">Full Architecture</span>
+            </div>
+          </div>
+
+          <div class="exp-item">
+            <div class="exp-period">May 2018 — Aug 2019 · 1.6 years</div>
+            <div class="exp-role">Automation & Embedded Engineer</div>
+            <div class="exp-company">AUTOBOTS</div>
+            <p class="exp-desc">
+              Developed automation and embedded systems solutions. Contributed navigation and auto-docking
+              features for indoor/outdoor patrolling robots.
+            </p>
+            <div class="exp-chips">
+              <span class="exp-chip">Embedded Systems</span>
+              <span class="exp-chip">Automation</span>
+              <span class="exp-chip">ROS</span>
+              <span class="exp-chip">Auto-docking</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="container">
+        <p class="section-eyebrow">Education</p>
+        <h2 class="section-title">Academic background</h2>
+        <div class="edu-card">
+          <div class="edu-icon">🎓</div>
+          <div>
+            <div class="edu-degree">Bachelor of Engineering (B.E)</div>
+            <div class="edu-spec">Mechatronics Engineering</div>
+            <div class="edu-meta">
+              K.S. Rangasamy College of Technology (Autonomous), Tiruchengode · May 2018
+            </div>
+          </div>
+          <div class="edu-cgpa">
+            <div class="cgpa-num">9.04</div>
+            <div class="cgpa-label">CGPA</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contact-bg"></div>
+      <div class="contact-grid-bg"></div>
+      <div class="container contact-inner">
+        <div class="contact-eyebrow">Get In Touch</div>
+        <h2 class="contact-heading">
+          Let's build<br />
+          <em>something great</em>
+        </h2>
+        <p class="contact-sub">
+          Open to senior robotics engineering roles, research collaborations, and consulting on autonomous
+          systems.
+        </p>
+        <a class="btn-light" href="mailto:gunakresh@gmail.com">Send a Message ↗</a>
+        <div class="contact-links">
+          <a href="https://www.linkedin.com/in/gunasekaran-singaravelu-5892a0147/" target="_blank" class="contact-link">LinkedIn Profile</a>
+          <a href="mailto:gunakresh@gmail.com" class="contact-link">gunakresh@gmail.com</a>
+          <a href="tel:+917200570750" class="contact-link">(+91) 7200570750</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <span class="footer-text">© 2026 Gunasekaran S — Lead Robotics Engineer</span>
+      <div class="footer-dot"></div>
+      <span class="footer-text">Nagapattinam, Tamil Nadu, India</span>
+    </footer>
+  </body>
+</html>
